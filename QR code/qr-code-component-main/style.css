@@ -21,6 +21,7 @@ body{
     width: 100%;
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 h2{
@@ -29,6 +30,31 @@ h2{
     letter-spacing: 0px;
 }
 
-p{
+p{ 
     opacity: 0.5;
+    text-align: center;
+    letter-spacing: 0px;
 }
+
+@media (max-width: 375px) {
+    body {
+      font-size: 12px;
+    }
+    .QRcode {
+      max-width: 100%;
+      padding: 10px; 
+      border-radius: 10px; 
+    }
+    h2 { 
+      font-size: 18px; 
+    }
+    p {
+      opacity: 0.5;
+    }
+  }
+  
+  
+  
+  
+  
+  
