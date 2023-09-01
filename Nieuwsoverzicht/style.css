@@ -1,0 +1,149 @@
+h1{
+    top: 100px;
+    left: 360px;
+    text-align: left;
+    font: normal normal bold 48px/55px Arial;
+    letter-spacing: 0px;
+    color: #444444;
+    opacity: 1;
+    position: absolute;
+}
+
+.foto_1 {
+    top: 201px;
+    left: 360px;
+    width: 580px;
+    height: 360px;
+    background: transparent url('img/picture-1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+.foto_2  {
+    top: 201px;
+    left: 980px;
+    width: 580px;
+    height: 360px;
+    background: transparent url('img/picture-1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+.foto_3  {
+    top: 601px;
+    left: 360px;
+    width: 380px;
+    height: 220px;
+    background: transparent url('img/picture-3.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+
+}
+
+.foto_4  {
+    top: 601px;
+    left: 770px;
+    width: 380px;
+    height: 220px;
+    background: transparent url('img/picture-3.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+.foto_5  {
+    top: 601px;
+    left: 1180px;
+    width: 380px;
+    height: 220px;
+    background: transparent url('img/picture-3.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+.foto1 p{
+    top: 468px;
+    left: 380px;
+    width: 540px;
+    text-align: left;
+    font: normal normal bold 24px/28px Arial;
+    letter-spacing: 0px;
+    color: #F6F6F6;
+    position: absolute;
+}
+
+.foto2 p{
+    top: 468px;
+    left: 1000px;
+    width: 540px;
+    text-align: left;
+    font: normal normal bold 24px/28px Arial;
+    letter-spacing: 0px;
+    color: #F6F6F6;
+    position: absolute;
+}
+
+.foto3 p{
+    top: 841px;
+    left: 360px;
+    width: 380px;
+    text-align: left;
+    font: normal normal bold 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #444444;
+    position: absolute;
+}
+
+.text3 p{
+    top: 892px;
+    left: 360px;
+    width: 380px;
+    text-align: left;
+    font: normal normal normal 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #444444;
+    position: absolute;
+}
+
+.foto4 p{
+    top: 841px;
+    left: 770px;
+    width: 380px;
+    text-align: left;
+    font: normal normal bold 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #444444;
+    position: absolute;
+}
+
+.text4 p{
+    top: 892px;
+    left: 770px;
+    width: 380px;
+    text-align: left;
+    font: normal normal normal 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #444444;
+    position: absolute;
+}
+
+.foto5 p{
+    top: 841px;
+    left: 1180px;
+    width: 380px;
+    text-align: left;
+    font: normal normal bold 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #444444;
+    position: absolute;
+}
+
+.text5 p{
+    top: 892px;
+    left: 1180px;
+    width: 380px;
+    text-align: left;
+    font: normal normal normal 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #444444;
+    position: absolute;
+}

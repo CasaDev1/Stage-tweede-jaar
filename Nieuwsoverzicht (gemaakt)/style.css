@@ -1,0 +1,120 @@
+:root {
+  --color-h1: #444444;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 100px 36px 0;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 48px 16px 0;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  color: var(--color-h1, #444444);
+  font-weight: 700;
+  margin: 0 0 48px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.news-items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+  align-items: start;
+}
+@media (max-width: 767px) {
+  .news-items {
+    grid-gap: 16px;
+  }
+}
+
+.news-item {
+  display: inline-grid;
+  grid-column: span 2;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (max-width: 1023px) {
+  .news-item {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 767px) {
+  .news-item {
+    grid-column: span 6;
+  }
+}
+.news-item .news-item__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 200ms ease-in-out;
+}
+.news-item .news-item__title {
+  min-height: 48px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+  .news-item .news-item__title {
+    min-height: unset;
+  }
+}
+.news-item .news-item__intro {
+  min-height: 72px;
+  color: #444444;
+}
+@media (max-width: 767px) {
+  .news-item .news-item__intro {
+    min-height: unset;
+  }
+}
+.news-item.news-item:hover .news-item__image {
+  opacity: 0.85;
+}
+.news-item.news-item--large {
+  position: relative;
+  grid-column: span 3;
+}
+@media (max-width: 1023px) {
+  .news-item.news-item--large {
+    grid-column: span 6;
+  }
+}
+.news-item.news-item--large .news-item__title {
+  position: absolute;
+  inset: auto 20px 20px;
+  min-height: 72px;
+  color: #FFFFFF;
+  font-size: 24px;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .news-item.news-item--large .news-item__title {
+    min-height: unset;
+  }
+}
+.news-item.news-item--large .news-item__intro {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

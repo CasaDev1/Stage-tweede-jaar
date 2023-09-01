@@ -1,0 +1,9 @@
+OPDRACHT: 
+Maak het object van het design na. Zie: https://xd.adobe.com/view/7f62594d-fb67-44b8-a3d4-a52f64cdec36-2a31/
+
+GEGEVENS: 
+Deze kan je uit het design halen. 
+
+VEREISTEN:
+-> De nieuwsberichten moeten ergens naartoe kunnen linken ( <a> tag ).
+-> Je maakt deze opdracht alleen, dus zonder te overleggen met je mede-stagiairs.
