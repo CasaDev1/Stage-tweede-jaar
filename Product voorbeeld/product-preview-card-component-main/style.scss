@@ -19,6 +19,9 @@ body{
     align-items: center;
     justify-content: center;
     height: 100%;
+    @media(max-width: 490px){
+        padding: 20px;
+    }
 }
 
 $block: ".parfume-block";
@@ -29,11 +32,20 @@ $block: ".parfume-block";
     display: flex;
     width: 100%;
     max-width: 600px;
+    @media(max-width: 490px){
+        flex-direction: column;
+    }
     #{$block}__image{
         display: flex;
         width: 50%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        @media(max-width: 490px){
+            content: url("images/image-product-mobile.jpg");
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+        }
     }
     #{$block}__cart{
         display: flex;
@@ -50,7 +62,7 @@ $block: ".parfume-block";
         }
         #{$block}__cart-text{
             font-size: 15px;
-            font-weight: 600; 
+            font-weight: 600;
         }
         #{$block}__cart-icon{
             margin-right: 12px;
@@ -63,6 +75,9 @@ $block: ".parfume-block";
         box-sizing: border-box;
         text-align: left;
         font-family: $font-montserrat;
+        @media(max-width: 490px){
+            width: 100%;
+        }
     }
     #{$block}__text1{
         text-transform: uppercase;
