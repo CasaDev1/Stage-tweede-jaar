@@ -19,7 +19,7 @@ fetchData().then(array => { // als function is gerund, doe dan dit met variabele
     elements.forEach(element => { // voor elk element in de elements array
       document.querySelector(`.summary-block__stats-${element}--icon`).src = array[count].icon
       document.querySelector(`.summary-block__stats-${element}--text`).innerText = array[count].category
-      document.querySelector(`.summary-block__stats-${element}--num`).innerText = array[count].score
+      document.querySelector(`.summary-block__stats-${element}__score--num`).innerText = array[count].score
       count++
     });
   }
