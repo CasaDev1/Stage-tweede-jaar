@@ -15,7 +15,7 @@ body{
 }
 
 .block{
-    
+    width: 100%;
     height: 100%;
 }
 
@@ -78,6 +78,7 @@ $block1: ".block1";
         padding-top: 100px;
     }
     &__title{
+        width: 536px;
         color: $dark-cyan;
         font-family: $poppins;
         font-size: 40px;
@@ -85,6 +86,7 @@ $block1: ".block1";
         line-height: 60px;
     }
     &__text1{
+        width: 520px;
         color: $dark-cyan;
         font-family: $open-sans;
         font-size: 18px;
@@ -107,6 +109,7 @@ $block1: ".block1";
             display: flex;
             justify-content: center;
             align-items: center;
+            text-decoration: none;
             font-family: $open-sans;
             font-size: 14px;
             font-weight: 700;
@@ -116,13 +119,15 @@ $block1: ".block1";
 
 $block2: ".block2";
 #{$block2}{
-    width: 1232px;
+    max-width: 1232px;
     height: 440px;
     border-radius: 16px;
     background: $white;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
-    margin-left: 296px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 160px;
+    margin-bottom: 41px;
     &__section{
         display: flex;
         justify-content: space-between;
@@ -157,13 +162,14 @@ $block2: ".block2";
 
 $block3: ".block3";
 #{$block3}{
-    width: 1232px;
+    max-width: 1232px;
     height: 440px;
     border-radius: 16px;
     background: $white;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
-    margin-left: 296px;
-    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 41px;
     &__section{
         display: flex;
         justify-content: space-between;
@@ -199,13 +205,13 @@ $block3: ".block3";
 
 $block4: ".block4";
 #{$block4}{
-    width: 1232px;
+    max-width: 1232px;
     height: 440px;
     border-radius: 16px;
     background: $white;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
-    margin-left: 296px;
-    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 160px;
     &__section{
         display: flex;
@@ -237,6 +243,17 @@ $block4: ".block4";
         padding-top: 20px;
         padding-right: 26px;
     }
+}
+
+.container_5-6{
+    background: linear-gradient(
+        to top,
+        $dark-cyan 0%,
+        $dark-cyan 70%,
+        $white 70%,
+        $white 100%,
+    );
+    
 }
 
 $block5: ".block5";
@@ -278,9 +295,110 @@ $block5: ".block5";
             display: flex;
             justify-content: center;
             align-items: center;
+            text-decoration: none;
             font-family: $open-sans;
             font-size: 20px;
             font-weight: 700;
         } 
     }
+}
+
+$block6: ".block6";
+#{$block6}{
+    background-color: #00252E;
+    width: 100%;
+    height: 418px;
+    &__holder{
+        display: flex;
+        margin-left: 120px;
+    }
+    &__text{
+        padding-top: 68px;
+        color: $white;
+        font-family: $open-sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__text2-3{
+        display: flex;
+        padding-top: 144px;
+        padding-left: 200px;
+    }
+    &__text2{
+        color: $white;
+        font-family: $open-sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+        &--aboutus:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        &--whatwedo:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        &--faq:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    &__text3{
+        color: $white;
+        font-family: $open-sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-left: 120px;
+        &--career:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        &--blog:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        &--contactus:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    &__logo{
+        margin-bottom: 32px;
+        color: $white;
+    }
+    &__location{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--icon{
+            margin-right: 16px;
+            margin-bottom: 40px;
+        }
+        &--text{
+            width: 339px;
+        }
+    }
+    &__phonenumber{
+        display: flex;
+        align-items: center;
+        &--icon{
+            margin-right: 16px;
+        }
+        &--text{
+            width: 100%;
+        }
+    }
+    &__email{
+        display: flex;
+        align-items: center;
+        &--icon{
+            margin-right: 16px;
+        }
+        &--text{
+            width: 100%;
+        }
+    }
+    
 }
