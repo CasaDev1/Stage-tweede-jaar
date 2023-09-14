@@ -32,7 +32,7 @@ body {
 .block1__Try-Button {
   padding-right: 80px;
 }
-.block1__Try-Button :hover {
+.block1__Try-Button:hover {
   cursor: pointer;
   opacity: 0.7;
 }
@@ -48,6 +48,8 @@ body {
   border-radius: 24px;
   background: #FFF;
   box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: hsl(192, 100%, 9%);
 }
 .block1__logo1 {
   margin-left: 88px;
@@ -89,7 +91,7 @@ body {
 .block1__Started-Button {
   margin-top: 50px;
 }
-.block1__Started-Button :hover {
+.block1__Started-Button:hover {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -264,7 +266,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.block5__Started-Button :hover {
+.block5__Started-Button:hover {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -380,4 +382,71 @@ body {
 }
 .block6__email--text {
   width: 100%;
+}
+.block6__socials {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 140px;
+  margin-left: 235px;
+  gap: 107px;
+}
+.block6__socials-holder {
+  display: flex;
+  gap: 30px;
+}
+.block6__socials-holder--facebook {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+}
+.block6__socials-holder--facebook:hover {
+  cursor: pointer;
+  border-color: hsl(322, 100%, 66%);
+}
+.block6__socials-holder--facebook-icon:hover {
+  fill: hsl(322, 100%, 66%);
+}
+.block6__socials-holder--twitter {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+}
+.block6__socials-holder--twitter:hover {
+  cursor: pointer;
+  border-color: hsl(322, 100%, 66%);
+}
+.block6__socials-holder--twitter-icon:hover {
+  fill: hsl(322, 100%, 66%);
+}
+.block6__socials-holder--instagram {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+}
+.block6__socials-holder--instagram:hover {
+  cursor: pointer;
+  border-color: hsl(322, 100%, 66%);
+}
+.block6__socials-holder--instagram-icon:hover {
+  fill: hsl(322, 100%, 66%);
+}
+.block6__copyright {
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

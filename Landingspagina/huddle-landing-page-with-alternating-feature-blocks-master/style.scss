@@ -38,7 +38,7 @@ $block1: ".block1";
     }
     &__Try-Button{
         padding-right: 80px;
-        :hover{
+        &:hover{
             cursor: pointer;
             opacity: 0.7;
         }
@@ -54,6 +54,8 @@ $block1: ".block1";
             border-radius: 24px;
             background: $white;
             box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.10);
+            text-decoration: none;
+            color: $dark-cyan;
         }
     }
     &__logo1{
@@ -95,7 +97,7 @@ $block1: ".block1";
     }
     &__Started-Button{
         margin-top: 50px;
-        :hover{
+        &:hover{
             cursor: pointer;
             opacity: 0.5;
         }
@@ -281,7 +283,7 @@ $block5: ".block5";
         display: flex;
         justify-content: center;
         align-items: center;
-        :hover{
+        &:hover{
             cursor: pointer;
             opacity: 0.5;
         }
@@ -399,6 +401,74 @@ $block6: ".block6";
         &--text{
             width: 100%;
         }
+    }
+    &__socials{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center; 
+        flex-direction: column;
+        padding-top: 140px;
+        margin-left: 235px;
+        gap: 107px;
+        
+    }
+    &__socials-holder{
+        display: flex;
+        gap: 30px;
+        &--facebook{
+            width: 31px;
+            height: 31px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid $white;
+            &:hover{
+                cursor: pointer;
+                border-color: $pink;
+            }
+        }
+        &--facebook-icon:hover{
+            fill: $pink;
+        }
+        &--twitter{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid $white;
+            &:hover{
+                cursor: pointer;
+                border-color: $pink;
+            }
+        }
+        &--twitter-icon:hover{
+            fill: $pink;
+        }
+        &--instagram{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid $white;
+            &:hover{
+                cursor: pointer;
+                border-color: $pink;
+            }
+        }
+        &--instagram-icon:hover{
+            fill: $pink;
+        }
+    }
+    &__copyright{
+        color: $white;
+        font-family: $poppins;
+        font-size: 12px;
+        font-weight: 400;
     }
     
 }
