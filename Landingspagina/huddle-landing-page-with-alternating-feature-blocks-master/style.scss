@@ -17,6 +17,12 @@ body{
 .block{
     width: 100%;
     height: 100%;
+    @media(max-width:1440px){
+        width: 1440px;
+    }
+    @media(max-width: 319px){
+        width: 400px;
+    }
 }
 
 $block1: ".block1";
@@ -26,6 +32,11 @@ $block1: ".block1";
     background-color: #EDFBFF;
     background-image: url(images/bg-hero-desktop.svg);
     background-repeat: no-repeat;
+    @media(max-width: 375px){
+        box-sizing: border-box;
+        width: 1440px;
+        background-image: url(images/bg-hero-mobile.svg);
+    }
     &__section-header{
         display: flex;
         justify-content: space-between;
@@ -34,7 +45,12 @@ $block1: ".block1";
     }
     &__section-intro{
         display: flex;
-        
+        justify-content: space-between;
+        @media(max-width: 375px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__Try-Button{
         padding-right: 80px;
@@ -56,10 +72,19 @@ $block1: ".block1";
             box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.10);
             text-decoration: none;
             color: $dark-cyan;
+            @media(max-width: 375px){
+                width: 96px;
+                height: 24px;
+                font-size: 10px;
+            }
         }
     }
     &__logo1{
         margin-left: 88px;
+        @media(max-width: 375px){
+            width: 104px;
+            height: 16px;
+        }
     }
     &__holder{
         margin-right: 50px;
@@ -67,17 +92,30 @@ $block1: ".block1";
         width: 790px;
         height: 550px;
         display: flex;
-        margin-top: 15px;
-        margin-left: 70px;
+        margin-top: 20px;
+        @media(max-width: 375px){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 279.685px;
+            height: 174.167px;
+        }
         --icon{
             max-width: 100%;
             width: 100%;
             height: 100%;
+            @media(max-width: 375px){
+                order: -1;
+            }
         }
     }
     &__text{
         margin-left: 88px;
         padding-top: 100px;
+        @media(max-width: 375px){ 
+            padding-top: 50px;
+            text-align: center; 
+        }
     }
     &__title{
         width: 536px;
@@ -86,6 +124,12 @@ $block1: ".block1";
         font-size: 40px;
         font-weight: 600;
         line-height: 60px;
+        @media(max-width: 375px){
+            line-height: 36px;
+            width: 280px;
+            font-size: 24px;
+            text-align: center;
+        }
     }
     &__text1{
         width: 520px;
@@ -115,6 +159,10 @@ $block1: ".block1";
             font-family: $open-sans;
             font-size: 14px;
             font-weight: 700;
+            @media(max-width: 375px){
+                width: 240px;
+                height: 40px;
+            }
         } 
     }
 }
@@ -130,10 +178,20 @@ $block2: ".block2";
     margin-right: auto;
     margin-top: 160px;
     margin-bottom: 41px;
+    @media(max-width: 375px){
+        margin-top: 59px;
+        width: 335px;
+        height: 488px;
+    }  
     &__section{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media(max-width: 375px){
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+        }  
     }
     &__text{
         padding-left: 120px;
@@ -159,6 +217,10 @@ $block2: ".block2";
         height: 332.286px;
         padding-top: 20px;
         padding-right: 32px;
+        @media(max-width: 375px){
+            width: 236px;
+            height: 194px;
+        }
     }
 }
 
@@ -172,11 +234,20 @@ $block3: ".block3";
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 41px;
+    @media(max-width: 375px){
+        width: 335px;
+        height: 488px;
+    }
     &__section{
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
         align-items: center;
+        @media(max-width: 375px){
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+        } 
     }
     &__text{
         padding-right: 29px;
@@ -202,6 +273,10 @@ $block3: ".block3";
         height: 332.286px;
         padding-top: 25px;
         padding-left: 65px;
+        @media(max-width: 375px){
+            width: 242.743px;
+            height: 172.8px;
+        }
     }
 }
 
@@ -215,10 +290,20 @@ $block4: ".block4";
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 160px;
+    @media(max-width: 375px){
+        width: 335px;
+        height: 488px;
+    }
     &__section{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media(max-width: 375px){
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        
     }
     &__text{
         padding-left: 120px;
@@ -244,6 +329,10 @@ $block4: ".block4";
         height: 332.286px;
         padding-top: 20px;
         padding-right: 26px;
+        @media(max-width: 375px){
+            width: 244.114px;
+            height: 184.686px;
+        }
     }
 }
 
@@ -308,10 +397,11 @@ $block5: ".block5";
 $block6: ".block6";
 #{$block6}{
     background-color: #00252E;
-    width: 100%;
+    max-width: 100%;
     height: 418px;
     &__holder{
         display: flex;
+        justify-content: center;
         margin-left: 120px;
     }
     &__text{
@@ -325,7 +415,7 @@ $block6: ".block6";
     &__text2-3{
         display: flex;
         padding-top: 144px;
-        padding-left: 200px;
+        padding-left: 140px;
     }
     &__text2{
         color: $white;
@@ -352,7 +442,7 @@ $block6: ".block6";
         font-size: 14px;
         font-weight: 400;
         line-height: 27px;
-        margin-left: 120px;
+        margin-left: 80px;
         &--career:hover {
             cursor: pointer;
             text-decoration: underline;
@@ -408,7 +498,7 @@ $block6: ".block6";
         justify-content: center; 
         flex-direction: column;
         padding-top: 140px;
-        margin-left: 235px;
+        margin-left: 200px;
         gap: 107px;
         
     }
