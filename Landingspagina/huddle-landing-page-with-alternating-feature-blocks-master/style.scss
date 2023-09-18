@@ -7,34 +7,27 @@ $grayish-blue:hsl(208, 11%, 55%);
 
 html{
     height: 100%;
+    width: 100%;
 }
 body{
     margin: 0;
-    height: 100%;
+    width: 100%;
     font-size: 18px;
 }
 
 .block{
     width: 100%;
-    height: 100%;
-    @media(max-width:1440px){
-        width: 1440px;
-    }
-    @media(max-width: 319px){
-        width: 400px;
-    }
 }
 
 $block1: ".block1";
 #{$block1}{
-    width: 100%;
-    height: 721px;
+    max-width: 100%;
+    padding-bottom: 72px;
     background-color: #EDFBFF;
     background-image: url(images/bg-hero-desktop.svg);
     background-repeat: no-repeat;
-    @media(max-width: 375px){
+    @media(max-width: 768px){
         box-sizing: border-box;
-        width: 1440px;
         background-image: url(images/bg-hero-mobile.svg);
     }
     &__section-header{
@@ -46,8 +39,10 @@ $block1: ".block1";
     &__section-intro{
         display: flex;
         justify-content: space-between;
-        @media(max-width: 375px){
+        @media(max-width: 768px){
             display: flex;
+            justify-content: center;
+            gap: 50%;
             flex-direction: column;
             align-items: center;
         }
@@ -72,7 +67,7 @@ $block1: ".block1";
             box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.10);
             text-decoration: none;
             color: $dark-cyan;
-            @media(max-width: 375px){
+            @media(max-width: 768px){
                 width: 96px;
                 height: 24px;
                 font-size: 10px;
@@ -81,7 +76,7 @@ $block1: ".block1";
     }
     &__logo1{
         margin-left: 88px;
-        @media(max-width: 375px){
+        @media(max-width: 768px){
             width: 104px;
             height: 16px;
         }
@@ -89,22 +84,22 @@ $block1: ".block1";
     &__holder{
         margin-right: 50px;
         max-width: 100%;
-        width: 790px;
         height: 550px;
         display: flex;
-        margin-top: 20px;
-        @media(max-width: 375px){
+        margin-top: 30px;
+        @media(max-width: 768px){
+            max-width: 100%;
+            margin-right: 0;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 279.685px;
             height: 174.167px;
         }
         --icon{
             max-width: 100%;
             width: 100%;
             height: 100%;
-            @media(max-width: 375px){
+            @media(max-width: 768px){
                 order: -1;
             }
         }
@@ -112,35 +107,46 @@ $block1: ".block1";
     &__text{
         margin-left: 88px;
         padding-top: 100px;
-        @media(max-width: 375px){ 
+        @media(max-width: 768px){
+            margin-left: 0; 
             padding-top: 50px;
             text-align: center; 
         }
     }
     &__title{
-        width: 536px;
+        max-width: 536px;
         color: $dark-cyan;
         font-family: $poppins;
         font-size: 40px;
         font-weight: 600;
         line-height: 60px;
-        @media(max-width: 375px){
+        @media(max-width: 768px){
+            max-width: 280px;
             line-height: 36px;
-            width: 280px;
             font-size: 24px;
-            text-align: center;
+            margin: auto;
         }
     }
     &__text1{
-        width: 520px;
+        max-width: 520px;
         color: $dark-cyan;
         font-family: $open-sans;
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
+        @media(max-width: 768px){
+            max-width: 420px
+        }
     }
     &__Started-Button{
+        max-width: 280px;
         margin-top: 50px;
+        height: 56px;
+        @media(max-width: 768px){
+            max-width: 240px;
+            height: 40px;
+            margin: auto;
+        }
         &:hover{
             cursor: pointer;
             opacity: 0.5;
@@ -148,8 +154,6 @@ $block1: ".block1";
         &--Button{
             background-color: $pink;
             border-radius: 28px;
-            width: 280px;
-            height: 56px;
             box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
             color: $white;
             display: flex;
@@ -159,10 +163,6 @@ $block1: ".block1";
             font-family: $open-sans;
             font-size: 14px;
             font-weight: 700;
-            @media(max-width: 375px){
-                width: 240px;
-                height: 40px;
-            }
         } 
     }
 }
@@ -170,7 +170,7 @@ $block1: ".block1";
 $block2: ".block2";
 #{$block2}{
     max-width: 1232px;
-    height: 440px;
+    padding-bottom: 88px;
     border-radius: 16px;
     background: $white;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
@@ -178,16 +178,17 @@ $block2: ".block2";
     margin-right: auto;
     margin-top: 160px;
     margin-bottom: 41px;
-    @media(max-width: 375px){
+    @media(max-width: 768px){
+        margin-right: 20px;
+        margin-left: 20px;
         margin-top: 59px;
-        width: 335px;
-        height: 488px;
+        padding-bottom: 20px;
     }  
     &__section{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media(max-width: 375px){
+        @media(max-width: 768px){
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
@@ -196,6 +197,10 @@ $block2: ".block2";
     &__text{
         padding-left: 120px;
         padding-top: 120px;
+        @media(max-width: 768px){
+            padding-left: 0;
+            padding-top: 60px
+        }
     }
     &__title{
         color: $dark-cyan;
@@ -203,6 +208,11 @@ $block2: ".block2";
         font-size: 28px;
         font-weight: 600;
         line-height: 42px;
+        @media(max-width: 768px){
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
     }
     &__text1{
         color: $grayish-blue;
@@ -210,16 +220,21 @@ $block2: ".block2";
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
-        width: 488px;
+        max-width: 488px;
+        @media(max-width: 768px){
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+        }
     }
     &__icon-holder{
-        width: 406.467px;
+        max-width: 406.467px;
         height: 332.286px;
         padding-top: 20px;
         padding-right: 32px;
-        @media(max-width: 375px){
-            width: 236px;
+        @media(max-width: 768px){
             height: 194px;
+            padding-right: 0;
         }
     }
 }
@@ -227,23 +242,25 @@ $block2: ".block2";
 $block3: ".block3";
 #{$block3}{
     max-width: 1232px;
-    height: 440px;
+    padding-bottom: 88px;
     border-radius: 16px;
     background: $white;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 41px;
-    @media(max-width: 375px){
-        width: 335px;
-        height: 488px;
+    @media(max-width: 768px){
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 59px;
+        padding-bottom: 20px;
     }
     &__section{
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
         align-items: center;
-        @media(max-width: 375px){
+        @media(max-width: 768px){
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
@@ -252,6 +269,10 @@ $block3: ".block3";
     &__text{
         padding-right: 29px;
         padding-top: 120px;
+        @media(max-width: 768px){
+            padding-left: 0;
+            padding-top: 60px
+        }
     }
     &__title{
         color: $dark-cyan;
@@ -259,6 +280,11 @@ $block3: ".block3";
         font-size: 28px;
         font-weight: 600;
         line-height: 42px;
+        @media(max-width: 768px){
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
     }
     &__text1{
         color: $grayish-blue;
@@ -266,16 +292,21 @@ $block3: ".block3";
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
-        width: 488px;
+        max-width: 488px;
+        @media(max-width: 768px){
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+        }
     }
     &__icon-holder{
-        width: 406.467px;
+        max-width: 406.467px;
         height: 332.286px;
         padding-top: 25px;
         padding-left: 65px;
-        @media(max-width: 375px){
-            width: 242.743px;
+        @media(max-width: 768px){
             height: 172.8px;
+            padding-left: 0;
         }
     }
 }
@@ -283,31 +314,36 @@ $block3: ".block3";
 $block4: ".block4";
 #{$block4}{
     max-width: 1232px;
-    height: 440px;
+    padding-bottom: 88px;
     border-radius: 16px;
     background: $white;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 160px;
-    @media(max-width: 375px){
-        width: 335px;
-        height: 488px;
+    margin-bottom: 70px;
+    @media(max-width: 768px){
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 59px;
+        padding-bottom: 20px;
     }
     &__section{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media(max-width: 375px){
+        @media(max-width: 768px){
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
-        }
-        
+        }  
     }
     &__text{
         padding-left: 120px;
         padding-top: 120px;
+        @media(max-width: 768px){
+            padding-left: 0;
+            padding-top: 60px
+        }
     }
     &__title{
         color: $dark-cyan;
@@ -315,6 +351,11 @@ $block4: ".block4";
         font-size: 28px;
         font-weight: 600;
         line-height: 42px;
+        @media(max-width: 768px){
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
     }
     &__text1{
         color: $grayish-blue;
@@ -322,44 +363,41 @@ $block4: ".block4";
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
-        width: 488px;
+        max-width: 488px;
+        @media(max-width: 768px){
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+        }
     }
     &__icon-holder{
-        width: 406.467px;
+        max-width: 406.467px;
         height: 332.286px;
         padding-top: 20px;
         padding-right: 26px;
-        @media(max-width: 375px){
-            width: 244.114px;
+        @media(max-width: 768px){
             height: 184.686px;
+            padding-right: 0;
         }
     }
-}
-
-.container_5-6{
-    background: linear-gradient(
-        to top,
-        $dark-cyan 0%,
-        $dark-cyan 70%,
-        $white 70%,
-        $white 100%,
-    );
-    
 }
 
 $block5: ".block5";
 #{$block5}{
     display: flex;
     justify-content: center;
+    position: relative;
+    transform: translateY(35%);
     &__holder{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 800px;
-        height: 280px;
+        max-width: 800px;
         border-radius: 15px;
         background: $white;
         box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
+        padding: 50px 100px;
+        box-sizing: border-box;
     }
     &__title{
         color: $dark-cyan;
@@ -398,7 +436,8 @@ $block6: ".block6";
 #{$block6}{
     background-color: #00252E;
     max-width: 100%;
-    height: 418px;
+    padding-bottom: 120px;
+    padding-top: 80px;
     &__holder{
         display: flex;
         justify-content: center;
@@ -469,7 +508,7 @@ $block6: ".block6";
             margin-bottom: 40px;
         }
         &--text{
-            width: 339px;
+            max-width: 339px;
         }
     }
     &__phonenumber{
