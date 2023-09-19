@@ -35,6 +35,8 @@ body {
 @media (max-width: 768px) {
   .block1__section-header {
     padding-top: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .block1__section-intro {
@@ -51,6 +53,11 @@ body {
 }
 .block1__Try-Button {
   padding-right: 80px;
+}
+@media (max-width: 768px) {
+  .block1__Try-Button {
+    padding-right: 0;
+  }
 }
 .block1__Try-Button:hover {
   cursor: pointer;
@@ -81,6 +88,7 @@ body {
 }
 @media (max-width: 768px) {
   .block1__logo1 {
+    margin-left: 0;
     width: 104px;
     height: 16px;
   }
@@ -119,7 +127,7 @@ body {
 @media (max-width: 768px) {
   .block1__text {
     margin-left: 0;
-    padding-top: 50px;
+    padding-top: 80px;
     text-align: center;
   }
 }
@@ -150,6 +158,8 @@ body {
 @media (max-width: 768px) {
   .block1__text1 {
     max-width: 420px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 .block1__Started-Button {
@@ -449,8 +459,9 @@ body {
   border-radius: 15px;
   background: #FFF;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
-  padding: 50px 100px;
+  padding: 30px 50px;
   box-sizing: border-box;
+  text-align: center;
 }
 .block5__text {
   display: flex;
@@ -484,7 +495,7 @@ body {
   background-color: hsl(322, 100%, 66%);
   border-radius: 100px;
   max-width: 400px;
-  padding: 25px 100px;
+  padding: 25px 80px;
   box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
   color: #FFF;
   display: flex;
@@ -539,7 +550,7 @@ body {
 }
 .block6__text2-3 {
   display: flex;
-  padding-top: 144px;
+  padding-top: 124px;
   padding-left: 140px;
 }
 @media (max-width: 768px) {
@@ -548,14 +559,25 @@ body {
     flex-direction: column;
     padding-top: 20px;
     padding-left: 0px;
+    gap: 16px;
   }
 }
 .block6__text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-decoration: none;
   color: #FFF;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 27px;
+}
+@media (max-width: 768px) {
+  .block6__text2 {
+    margin-bottom: 0;
+    gap: 16px;
+  }
 }
 .block6__text2--aboutus:hover {
   cursor: pointer;
@@ -570,6 +592,10 @@ body {
   text-decoration: underline;
 }
 .block6__text3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-decoration: none;
   color: #FFF;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -580,6 +606,7 @@ body {
 @media (max-width: 768px) {
   .block6__text3 {
     margin-left: 0;
+    gap: 16px;
   }
 }
 .block6__text3--career:hover {
@@ -648,11 +675,11 @@ body {
     gap: 24px;
   }
 }
-.block6__socials-holder {
+.block6 .block6__socials-holder {
   display: flex;
   gap: 30px;
 }
-.block6__socials-holder--facebook {
+.block6 .block6__socials-holder--facebook {
   width: 31px;
   height: 31px;
   display: flex;
@@ -661,14 +688,14 @@ body {
   border-radius: 50%;
   border: 1px solid #FFF;
 }
-.block6__socials-holder--facebook:hover {
+.block6 .block6__socials-holder--facebook:hover {
   cursor: pointer;
   border-color: hsl(322, 100%, 66%);
 }
-.block6__socials-holder--facebook-icon:hover {
+.block6 .block6__socials-holder--facebook:hover .block6__socials-holder--facebook-icon {
   fill: hsl(322, 100%, 66%);
 }
-.block6__socials-holder--twitter {
+.block6 .block6__socials-holder--twitter {
   width: 30px;
   height: 30px;
   display: flex;
@@ -677,14 +704,14 @@ body {
   border-radius: 50%;
   border: 1px solid #FFF;
 }
-.block6__socials-holder--twitter:hover {
+.block6 .block6__socials-holder--twitter:hover {
   cursor: pointer;
   border-color: hsl(322, 100%, 66%);
 }
-.block6__socials-holder--twitter-icon:hover {
+.block6 .block6__socials-holder--twitter:hover .block6__socials-holder--twitter-icon {
   fill: hsl(322, 100%, 66%);
 }
-.block6__socials-holder--instagram {
+.block6 .block6__socials-holder--instagram {
   width: 30px;
   height: 30px;
   display: flex;
@@ -693,11 +720,11 @@ body {
   border-radius: 50%;
   border: 1px solid #FFF;
 }
-.block6__socials-holder--instagram:hover {
+.block6 .block6__socials-holder--instagram:hover {
   cursor: pointer;
   border-color: hsl(322, 100%, 66%);
 }
-.block6__socials-holder--instagram-icon:hover {
+.block6 .block6__socials-holder--instagram:hover .block6__socials-holder--instagram-icon {
   fill: hsl(322, 100%, 66%);
 }
 .block6__copyright {

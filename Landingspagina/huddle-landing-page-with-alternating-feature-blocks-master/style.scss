@@ -37,6 +37,8 @@ $block1: ".block1";
         padding-top: 40px;
         @media(max-width: 768px){
             padding-top: 30px;
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
     &__section-intro{
@@ -51,6 +53,9 @@ $block1: ".block1";
     }
     &__Try-Button{
         padding-right: 80px;
+        @media(max-width: 768px){
+            padding-right: 0;
+        }
         &:hover{
             cursor: pointer;
             opacity: 0.7;
@@ -77,6 +82,7 @@ $block1: ".block1";
     &__logo1{
         margin-left: 88px;
         @media(max-width: 768px){
+            margin-left: 0;
             width: 104px;
             height: 16px;
         }
@@ -109,7 +115,7 @@ $block1: ".block1";
         padding-top: 100px;
         @media(max-width: 768px){
             margin-left: 0; 
-            padding-top: 50px;
+            padding-top: 80px;
             text-align: center; 
         }
     }
@@ -135,7 +141,10 @@ $block1: ".block1";
         font-weight: 400;
         line-height: 27px;
         @media(max-width: 768px){
-            max-width: 420px
+            max-width: 420px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
         }
     }
     &__Started-Button{
@@ -401,8 +410,9 @@ $block5: ".block5";
         border-radius: 15px;
         background: $white;
         box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
-        padding: 50px 100px;
+        padding: 30px 50px;
         box-sizing: border-box;
+        text-align: center;
     }
     &__text{
         display: flex;
@@ -433,7 +443,7 @@ $block5: ".block5";
             background-color: $pink;
             border-radius: 100px;
             max-width: 400px;
-            padding: 25px 100px;
+            padding: 25px 80px;
             box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
             color: $white;
             display: flex;
@@ -484,21 +494,30 @@ $block6: ".block6";
     }
     &__text2-3{
         display: flex;
-        padding-top: 144px;
+        padding-top: 124px;
         padding-left: 140px;
         @media(max-width: 768px){
             display: flex;
             flex-direction: column;
             padding-top: 20px;
             padding-left: 0px;
+            gap: 16px;
         }
     }
     &__text2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-decoration: none;
         color: $white;
         font-family: $open-sans;
         font-size: 14px;
         font-weight: 400;
         line-height: 27px;
+        @media(max-width: 768px){
+            margin-bottom: 0;
+            gap: 16px;
+        }
         &--aboutus:hover {
             cursor: pointer;
             text-decoration: underline;
@@ -513,6 +532,10 @@ $block6: ".block6";
         }
     }
     &__text3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-decoration: none;
         color: $white;
         font-family: $open-sans;
         font-size: 14px;
@@ -521,6 +544,7 @@ $block6: ".block6";
         margin-left: 80px;
         @media(max-width: 768px){
             margin-left: 0;
+            gap: 16px;
         }
         &--career:hover {
             cursor: pointer;
@@ -589,7 +613,7 @@ $block6: ".block6";
         }
         
     }
-    &__socials-holder{
+    #{$block6}__socials-holder{
         display: flex;
         gap: 30px;
         &--facebook{
@@ -603,10 +627,10 @@ $block6: ".block6";
             &:hover{
                 cursor: pointer;
                 border-color: $pink;
+                #{$block6}__socials-holder--facebook-icon {
+                    fill: $pink;
+                }
             }
-        }
-        &--facebook-icon:hover{
-            fill: $pink;
         }
         &--twitter{
             width: 30px;
@@ -619,10 +643,10 @@ $block6: ".block6";
             &:hover{
                 cursor: pointer;
                 border-color: $pink;
+                #{$block6}__socials-holder--twitter-icon {
+                    fill: $pink;
+                }
             }
-        }
-        &--twitter-icon:hover{
-            fill: $pink;
         }
         &--instagram{
             width: 30px;
@@ -635,10 +659,10 @@ $block6: ".block6";
             &:hover{
                 cursor: pointer;
                 border-color: $pink;
+                #{$block6}__socials-holder--instagram-icon {
+                    fill: $pink;
+                }
             }
-        }
-        &--instagram-icon:hover{
-            fill: $pink;
         }
     }
     &__copyright{
