@@ -504,7 +504,7 @@ $block6: ".block6";
     }
     &__text2-3{
         display: flex;
-        padding-top: 124px;
+        padding-top: 115px;
         padding-left: 140px;
         @media(max-width: 1040px){
             display: flex;
@@ -577,16 +577,16 @@ $block6: ".block6";
             max-width: 190px;
         }
     }
-    &__location{
+    &__location {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        &--icon{
+        align-items: flex-start;
+        &--icon {
             margin-right: 16px;
-            margin-bottom: 40px;
+            margin-top: 5px;
         }
-        &--text{
+        &--text {
             max-width: 339px;
+            margin: 0;
         }
     }
     &__phonenumber{

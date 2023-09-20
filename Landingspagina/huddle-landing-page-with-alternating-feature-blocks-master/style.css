@@ -564,7 +564,7 @@ body {
 }
 .block6__text2-3 {
   display: flex;
-  padding-top: 124px;
+  padding-top: 115px;
   padding-left: 140px;
 }
 @media (max-width: 1040px) {
@@ -647,15 +647,15 @@ body {
 }
 .block6__location {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .block6__location--icon {
   margin-right: 16px;
-  margin-bottom: 40px;
+  margin-top: 5px;
 }
 .block6__location--text {
   max-width: 339px;
+  margin: 0;
 }
 .block6__phonenumber {
   display: flex;
