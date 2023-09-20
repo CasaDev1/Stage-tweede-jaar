@@ -26,7 +26,7 @@ $block1: ".block1";
     background-color: #EDFBFF;
     background-image: url(images/bg-hero-desktop.svg);
     background-repeat: no-repeat;
-    @media(max-width: 768px){
+    @media(max-width: 1040px){
         box-sizing: border-box;
         background-image: url(images/bg-hero-mobile.svg);
     }
@@ -35,7 +35,7 @@ $block1: ".block1";
         justify-content: space-between;
         align-items: center;
         padding-top: 40px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             padding-top: 30px;
             padding-left: 16px;
             padding-right: 16px;
@@ -44,7 +44,7 @@ $block1: ".block1";
     &__section-intro{
         display: flex;
         justify-content: space-between;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -53,7 +53,7 @@ $block1: ".block1";
     }
     &__Try-Button{
         padding-right: 80px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             padding-right: 0;
         }
         &:hover{
@@ -73,7 +73,7 @@ $block1: ".block1";
             box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.10);
             text-decoration: none;
             color: $dark-cyan;
-            @media(max-width: 768px){
+            @media(max-width: 1040px){
                 padding: 5px 25px;
                 font-size: 10px;
             }
@@ -81,7 +81,7 @@ $block1: ".block1";
     }
     &__logo1{
         margin-left: 88px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             margin-left: 0;
             width: 104px;
             height: 16px;
@@ -93,7 +93,7 @@ $block1: ".block1";
         height: 550px;
         display: flex;
         margin-top: 30px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 100%;
             margin-right: 0;
             flex-direction: column;
@@ -105,7 +105,7 @@ $block1: ".block1";
             max-width: 100%;
             width: 100%;
             height: 100%;
-            @media(max-width: 768px){
+            @media(max-width: 1040px){
                 order: -1;
             }
         }
@@ -113,7 +113,7 @@ $block1: ".block1";
     &__text{
         margin-left: 88px;
         padding-top: 100px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             margin-left: 0; 
             padding-top: 80px;
             text-align: center; 
@@ -126,7 +126,7 @@ $block1: ".block1";
         font-size: 40px;
         font-weight: 600;
         line-height: 60px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 280px;
             line-height: 36px;
             font-size: 24px;
@@ -140,7 +140,7 @@ $block1: ".block1";
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 420px;
             margin-left: 20px;
             margin-right: 20px;
@@ -150,7 +150,7 @@ $block1: ".block1";
     &__Started-Button{
         max-width: 280px;
         padding: 20px 0px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 240px;
             padding: 15px 0px;
             margin: auto;
@@ -186,7 +186,7 @@ $block2: ".block2";
     margin-right: auto;
     margin-top: 160px;
     margin-bottom: 41px;
-    @media(max-width: 768px){
+    @media(max-width: 1040px){
         margin-right: 20px;
         margin-left: 20px;
         margin-top: 59px;
@@ -196,7 +196,7 @@ $block2: ".block2";
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
@@ -205,7 +205,7 @@ $block2: ".block2";
     &__text{
         padding-left: 120px;
         padding-top: 120px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             padding-left: 0;
             padding-top: 60px
         }
@@ -216,7 +216,7 @@ $block2: ".block2";
         font-size: 28px;
         font-weight: 600;
         line-height: 42px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             font-size: 20px;
             line-height: 30px;
             text-align: center;
@@ -229,7 +229,7 @@ $block2: ".block2";
         font-weight: 400;
         line-height: 27px;
         max-width: 488px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 256px;
             font-size: 14px;
             line-height: 21px;
@@ -241,7 +241,7 @@ $block2: ".block2";
         height: 332.286px;
         padding-top: 20px;
         padding-right: 32px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 100%;
             height: 194px;
             padding-right: 0;
@@ -259,7 +259,7 @@ $block3: ".block3";
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 41px;
-    @media(max-width: 768px){
+    @media(max-width: 1040px){
         margin-right: 20px;
         margin-left: 20px;
         margin-top: 59px;
@@ -270,7 +270,7 @@ $block3: ".block3";
         justify-content: space-between;
         flex-direction: row-reverse;
         align-items: center;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
@@ -279,7 +279,7 @@ $block3: ".block3";
     &__text{
         padding-right: 29px;
         padding-top: 120px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             padding-left: 0;
             padding-top: 60px
         }
@@ -290,7 +290,7 @@ $block3: ".block3";
         font-size: 28px;
         font-weight: 600;
         line-height: 42px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             font-size: 20px;
             line-height: 30px;
             text-align: center;
@@ -303,7 +303,7 @@ $block3: ".block3";
         font-weight: 400;
         line-height: 27px;
         max-width: 488px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 256px;
             font-size: 14px;
             line-height: 21px;
@@ -315,7 +315,10 @@ $block3: ".block3";
         height: 332.286px;
         padding-top: 25px;
         padding-left: 65px;
-        @media(max-width: 768px){
+        @media(max-width: 1069px){
+            padding-left: 5px;
+        }
+        @media(max-width: 1040px){
             max-width: 100%;
             height: 172.8px;
             padding-left: 0;
@@ -333,7 +336,7 @@ $block4: ".block4";
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
-    @media(max-width: 768px){
+    @media(max-width: 1040px){
         margin-right: 20px;
         margin-left: 20px;
         margin-top: 59px;
@@ -343,7 +346,7 @@ $block4: ".block4";
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
@@ -352,7 +355,7 @@ $block4: ".block4";
     &__text{
         padding-left: 120px;
         padding-top: 120px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             padding-left: 0;
             padding-top: 60px
         }
@@ -363,7 +366,7 @@ $block4: ".block4";
         font-size: 28px;
         font-weight: 600;
         line-height: 42px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             font-size: 20px;
             line-height: 30px;
             text-align: center;
@@ -376,7 +379,7 @@ $block4: ".block4";
         font-weight: 400;
         line-height: 27px;
         max-width: 488px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 248px;
             font-size: 14px;
             line-height: 21px;
@@ -388,7 +391,7 @@ $block4: ".block4";
         height: 332.286px;
         padding-top: 20px;
         padding-right: 26px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             max-width: 100%;
             height: 184.686px;
             padding-right: 0;
@@ -413,6 +416,12 @@ $block5: ".block5";
         padding: 30px 50px;
         box-sizing: border-box;
         text-align: center;
+        @media(max-width: 1040px){
+            padding: 30px 25px;
+            max-width: 100%;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
     }
     &__text{
         display: flex;
@@ -426,7 +435,7 @@ $block5: ".block5";
         font-size: 32px;
         font-weight: 600;
         line-height: 60px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             font-size: 18px;
             line-height: 30px;
         }
@@ -455,7 +464,7 @@ $block5: ".block5";
             font-size: 20px;
             font-weight: 700;
             line-height: 30px;
-            @media(max-width: 768px){
+            @media(max-width: 1040px){
                 padding: 12.5px 50px;
                 font-size: 10px;
                 line-height: 15px;
@@ -470,14 +479,15 @@ $block6: ".block6";
     max-width: 100%;
     padding-bottom: 120px;
     padding-top: 80px;
-    @media(max-width: 768px){
+    box-sizing: border-box;
+    @media(max-width: 1040px){
         padding-bottom: 0;
     }
     &__holder{
         display: flex;
         justify-content: center;
-        margin-left: 120px;
-        @media(max-width: 768px){
+        padding: 0px 10px 0px 10px;
+        @media(max-width: 1040px){
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -496,7 +506,7 @@ $block6: ".block6";
         display: flex;
         padding-top: 124px;
         padding-left: 140px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             display: flex;
             flex-direction: column;
             padding-top: 20px;
@@ -514,7 +524,7 @@ $block6: ".block6";
         font-size: 14px;
         font-weight: 400;
         line-height: 27px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             margin-bottom: 0;
             gap: 16px;
         }
@@ -542,7 +552,7 @@ $block6: ".block6";
         font-weight: 400;
         line-height: 27px;
         margin-left: 80px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             margin-left: 0;
             gap: 16px;
         }
@@ -562,6 +572,10 @@ $block6: ".block6";
     &__logo{
         margin-bottom: 32px;
         color: $white;
+        @media(max-width: 1040px){
+            margin-bottom: 16px;
+            max-width: 190px;
+        }
     }
     &__location{
         display: flex;
@@ -603,13 +617,13 @@ $block6: ".block6";
         padding-top: 140px;
         margin-left: 200px;
         gap: 107px;
-        @media(max-width: 768px){
+        @media(max-width: 1040px){
             display: flex;
             align-items: center;
             padding-top: 20px;
-            margin-left: 0;
+            margin-left: auto;
+            margin-right: auto;
             gap: 24px;
-            
         }
         
     }
