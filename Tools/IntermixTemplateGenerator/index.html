@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intermix Template Generator ©</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body class="container">
+<header></header>
+<main>
+<div style="margin-top: 50px;">
+    <input type="text" id="section-name" placeholder="Sectie naam">
+    <button onclick="generateSectionHTML( 'add' );">Genereer extra HTML</button>
+    <button onclick="generateSectionHTML( 'new' );">Genereer nieuwe HTML</button>
+</div>
+    <div>
+    <textarea id="section-html-result" style="width: 100%; min-height: 250px;" rows="100"></textarea>
+    </div>
+</main>
+<footer></footer>
+
+<script>
+
+    function generateSectionHTML( f_type ) {
+        let sectionName = document.getElementById( 'section-name' ).value;
+        let textarea = document.getElementById( 'section-html-result' );
+        let sectionHTMLResult = `
+                <section id="section--{{section-name}}" class="section">
+                  <div class="{{section-name}}" data-template-width="200" data-template-height="30" data-template-container="{{section-name-uppercase}}">
+                    <div class="{{section-name}}-inner section group full">#!{{section-name-uppercase}}!#{BREAK}</div>
+                  </div>
+                </section>`;
+        sectionHTMLResult = sectionHTMLResult.replaceAll( '{{section-name}}', sectionName );
+        sectionHTMLResult = sectionHTMLResult.replaceAll( '{{section-name-uppercase}}', sectionName.toUpperCase() );
+
+        if( f_type === 'add' ) {
+            sectionHTMLResult = textarea.value + sectionHTMLResult;
+        }
+
+        textarea.value = sectionHTMLResult;
+    }
+
+</script>
+
+</body>
+</html>
